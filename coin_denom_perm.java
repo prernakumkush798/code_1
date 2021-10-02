@@ -6,6 +6,9 @@ public class coin_denom_perm {
 		coin_den_perm(coin, 10,  "");
 		
 	}
+	if(total_amount<0) {
+		return;
+	}
 public static void coin_den_perm(int coin[],int total_amount,String ans) {
 	if(total_amount==0) {
 		System.out.println(ans);
