@@ -17,6 +17,7 @@ public static void coin_den_wrt_box(int []coin,int index,int amount,String ans )
 	
 	coin_den_wrt_box(coin, index, amount-coin[index],ans+coin[index]);//select-->as we have selected that coin we need not to got to next coin
 	//bco we are having infinite unique coins in this case
+	coin_den_wrt_box(coin, index+1,amount, ans); //deselect
 	
 	
 }
